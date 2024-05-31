@@ -1,0 +1,8 @@
+python -m venv nombre del entorno virtula qu queremos crear : Vamos a crear el entorno virtual. Para este ejemplo la carpeta se llama venv
+python -m venv venv
+. venv/Scripts/activate : activaremos el entorno virtual
+deactivate  : desactivar el entorno virtual
+pip install Django
+pip freeze > requirements.txt  : Creamos este archivo para saber los requerimentos del entorno virtual para ser ejecudado
+django-admin startproject proyecto .   : creamos el proyecto django
+python manage.py runserver   : para ver que nuestro proyecto esta funcionando
