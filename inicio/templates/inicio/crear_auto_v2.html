@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block title_head %}
+crear auto
+
+{% endblock title_head %}
+
+{% block h1_header %}
+pasate por acá
+{% endblock h1_header %}
+
+{% comment "formulario" %}{% endcomment %}
+{% block main %}
+<form action={% url 'crear_auto_v2' %} method="post">
+    {% csrf_token %}
+
+    {% comment %} <p>
+        Marca:
+        <input type="text" placeholder="Marca" name="Marca">
+    </p>
+
+    <p>
+        Modelo:
+        <input type="text" placeholder="Modelo" name="modelo">
+    </p> {% endcomment %}
+
+    {{formulario}}
+
+    <input type="submit" value="Enviar">
+   {% comment "" %} <button>Enviar</button> {% endcomment %}
+
+
+</form>
+
+{% endblock main %}
